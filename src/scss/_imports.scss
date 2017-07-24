@@ -6,3 +6,14 @@
 @import "variables-theme.scss";
 @import "mixins-theme.scss";
 @import "uikit-theme.scss";
+@import "slick.scss";
+@import "slick-theme.scss";
+@import "vendor/leaflet/leaflet";
+@import "colors";
+@import "typography";
+
+@import "components/navbar";
+@import "components/hero-section";
+@import "components/about-section";
+@import "components/gallery-section";
+@import "components/contact-section";

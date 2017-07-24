@@ -99,7 +99,10 @@ gulp.task("css", ["images", "fonts"], function() {
     .pipe(sourcemaps.init())
     .pipe(
       sass({
-        includePaths: ["node_modules/uikit/src/scss"],
+        includePaths: [
+          "node_modules/uikit/src/scss",
+          "node_modules/slick-carousel/slick"
+        ],
         outputStyle: "nested",
         imagePath: "images/",
         precision: 3,
