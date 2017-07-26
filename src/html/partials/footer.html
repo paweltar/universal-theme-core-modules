@@ -8,26 +8,28 @@
     <div class="uk-grid-match uk-grid-divider" uk-grid>
       <div class="uk-width-1-2@m">
         <ul class="uk-nav uk-nav-default">
-          <li class="uk-nav-header">Name of the Company</li>
+          <li class="uk-nav-header">{{global.company-name}}</li>
           <li class="uk-nav-divider"></li>
-          <li><span class="uk-text-meta uk-margin-small-right">city:</span>Macclesfield Forest</li>
-          <li><span class="uk-text-meta uk-margin-small-right">street:</span>68 South Crescent</li>
-          <li><span class="uk-text-meta uk-margin-small-right">phone:</span>202-555-0101</li>
-          <li><span class="uk-text-meta uk-margin-small-right">email:</span>testemail@test.com</li>
+          <li><span class="uk-text-meta uk-margin-small-right">city:</span>{{global.city}}</li>
+          <li><span class="uk-text-meta uk-margin-small-right">street:</span>{{global.street}}</li>
+          {{#each global.phone}}
+            <li><span class="uk-text-meta uk-margin-small-right">phone:</span>{{this}}</li>
+          {{/each}}
+          <li><span class="uk-text-meta uk-margin-small-right">email:</span>{{global.email}}</li>
           <li class="uk-nav-divider"></li>
           <li>
-            <p class="uk-margin-top">Some optional info here:</p>
+            <p class="uk-margin-top">{{footer.footer-info.title}}</p>
           </li>
-          <li class="uk-heading-bullet uk-margin-bottom">You want to know more?</li>
+          <li class="uk-heading-bullet uk-margin-bottom">{{footer.footer-info.list-header}}</li>
           <ul class="uk-list uk-list-bullet">
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            {{#each footer.footer-info.list-items}}
+              <li>{{this}}</li>
+            {{/each}}
           </ul>
           <li class="uk-margin-top"><ul class="uk-iconnav">
-            <li><a href="#" uk-icon="icon: facebook"></a></li>
-            <li><a href="#" uk-icon="icon: twitter"></a></li>
-            <li><a href="#" uk-icon="icon: pinterest"></a></li>
-            <li><a href="#" uk-icon="icon: youtube"></a></li>
+            {{#each social-media.accounts}}
+              <li><a href="{{this.url}}" uk-icon="icon: {{this.icon}}"></a></a></li>
+            {{/each}}
           </ul></li>
         </ul>
       </div>
@@ -36,12 +38,12 @@
           <fieldset class="uk-fieldset uk-position-relative uk-dark">
             <legend class="uk-legend">Contact Form</legend>
             <div class="uk-margin">
-              <input class="uk-input uk-width-1-1" type="email" placeholder="Yyour Email" name="_replyto" required />
+              <input class="uk-input uk-width-1-1" type="email" placeholder="Your email address" name="_replyto" required />
             </div>
             <div class="uk-margin">
               <textarea class="uk-textarea uk-width-1-1" rows="5" placeholder="Your message" name="message" required></textarea>
             </div>
-            <input type="hidden" name="_subject" value="You've got new message from www.testsite.com!" />
+            <input type="hidden" name="_subject" value="You've got new message from your website!" />
             <input type="text" name="_gotcha" style="display:none" />
             <div class="uk-margin">
               <input class="uk-button uk-button-default uk-width-1-1" type="submit" value="Send">

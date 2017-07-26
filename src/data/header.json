@@ -1,0 +1,18 @@
+{
+  "menu": {
+    "sections": [
+      {
+        "title": "About",
+        "link-url": "#section-about"
+      },
+      {
+        "title": "Gallery",
+        "link-url": "#section-gallery"
+      },
+      {
+        "title": "Contact",
+        "link-url": "#section-contact" 
+      }
+    ]
+  }
+}

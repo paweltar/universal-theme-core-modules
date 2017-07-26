@@ -1,46 +1,16 @@
 <div class="uk-section uk-section-muted" id="section-gallery">
     <div class="uk-container gallery-container">
         <div class="slides-container">
+          {{#each gallery-section.slider-items}}
             <div class="slider-item">
               <div class="uk-cover-container uk-height-medium subtle-shadow">
-                  <canvas width="200" height="200"></canvas>
-                  <img uk-cover src="/images/bg1.jpg" alt="About image">
+                <canvas width="200" height="200"></canvas>
+                <img uk-cover src="{{this.img-path}}" alt="{{this.alt-text}}">
               </div>
-              <h1 class="uk-heading-bullet">Heading Bullet</h1>
-              <p class="uk-article-meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+              <h1 class="uk-heading-bullet">{{this.title}}</h1>
+              <p class="uk-article-meta">{{this.description}}</p>
             </div>
-            <div class="slider-item">
-              <div class="uk-cover-container uk-height-medium subtle-shadow">
-                  <canvas width="200" height="200"></canvas>
-                  <img uk-cover src="/images/bg2.jpeg" alt="About image">
-              </div>
-              <h1 class="uk-heading-bullet">Heading Bullet</h1>
-              <p class="uk-article-meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-            </div>
-            <div class="slider-item">
-              <div class="uk-cover-container uk-height-medium subtle-shadow">
-                  <canvas width="200" height="200"></canvas>
-                  <img uk-cover src="/images/bg1.jpg" alt="About image">
-              </div>
-              <h1 class="uk-heading-bullet">Heading Bullet</h1>
-              <p class="uk-article-meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-            </div>
-            <div class="slider-item">
-              <div class="uk-cover-container uk-height-medium subtle-shadow">
-                  <canvas width="200" height="200"></canvas>
-                  <img uk-cover src="/images/bg1.jpg" alt="About image">
-              </div>
-              <h1 class="uk-heading-bullet">Heading Bullet</h1>
-              <p class="uk-article-meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-            </div>
-            <div class="slider-item">
-              <div class="uk-cover-container uk-height-medium subtle-shadow">
-                  <canvas width="200" height="200"></canvas>
-                  <img uk-cover src="/images/bg1.jpg" alt="About image">
-              </div>
-              <h1 class="uk-heading-bullet">Heading Bullet</h1>
-              <p class="uk-article-meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-            </div>
+          {{/each}}
         </div>
     </div>
 </div>

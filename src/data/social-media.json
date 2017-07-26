@@ -1,0 +1,19 @@
+{
+  "accounts": [{
+    "platform": "facebook",
+    "url": "/",
+    "icon": "facebook"
+  }, {
+    "platform": "twitter",
+    "url": "/",
+    "icon": "twitter"
+  }, {
+    "platform": "pinterest",
+    "url": "/",
+    "icon": "pinterest"
+  }, {
+    "platform": "youtube",
+    "url": "/",
+    "icon": "youtube"
+  }]
+}
