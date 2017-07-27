@@ -6,7 +6,6 @@ var panini = require("panini");
 var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var assets = require("postcss-assets");
-var autoprefixer = require("autoprefixer");
 var mqpacker = require("css-mqpacker");
 var cssnano = require("cssnano");
 var autoprefixer = require("autoprefixer");

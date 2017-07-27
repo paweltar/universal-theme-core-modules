@@ -10,8 +10,12 @@
         "link-url": "#section-gallery"
       },
       {
+        "title": "Offer",
+        "link-url": "#tiles-grid"
+      },
+      {
         "title": "Contact",
-        "link-url": "#section-contact" 
+        "link-url": "#section-contact"
       }
     ]
   }

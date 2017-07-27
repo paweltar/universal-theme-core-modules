@@ -1,15 +1,17 @@
 <div class="uk-section uk-section-muted" id="section-gallery">
     <div class="uk-container gallery-container">
-        <div class="slides-container">
+        <div class="slides-container" uk-lightbox="animation: scale">
           {{#each gallery-section.slider-items}}
+          <a class="uk-link-reset" href="{{this.img-path}}" data-caption="{{this.alt-text}}">
             <div class="slider-item">
               <div class="uk-cover-container uk-height-medium subtle-shadow">
                 <canvas width="200" height="200"></canvas>
-                <img uk-cover src="{{this.img-path}}" alt="{{this.alt-text}}">
+                  <img uk-cover src="{{this.img-path}}" alt="{{this.alt-text}}">
               </div>
               <h1 class="uk-heading-bullet">{{this.title}}</h1>
               <p class="uk-article-meta">{{this.description}}</p>
             </div>
+          </a>
           {{/each}}
         </div>
     </div>

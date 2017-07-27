@@ -1,25 +1,25 @@
 {"slider-items": [
   {
-    "img-path": "/images/bg1.jpg",
-    "alt-text": "Image description",
+    "img-path": "/images/gallery/photo1.jpeg",
+    "alt-text": "Image description 1",
+    "title": "Heading Bullet",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+  },
+  {
+    "img-path": "/images/gallery/photo2.jpeg",
+    "alt-text": "Image description 2",
     "title": "Heading Bullet",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
   },
   {
     "img-path": "/images/bg1.jpg",
-    "alt-text": "Image description",
-    "title": "Heading Bullet",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
-  },
-  {
-    "img-path": "/images/bg1.jpg",
-    "alt-text": "Image description",
+    "alt-text": "Image description 3",
     "title": "Heading Bullet",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit am."
   },
   {
     "img-path": "/images/bg2.jpeg",
-    "alt-text": "Image description",
+    "alt-text": "Image description 4",
     "title": "Heading Bullet",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
   }

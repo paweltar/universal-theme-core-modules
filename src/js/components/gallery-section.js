@@ -5,7 +5,7 @@ $(document).ready(function() {
   $(".slides-container").slick({
     infinite: true,
     draggable: true,
-    arrows: false,
+    arrows: true,
     dots: true,
     speed: 600,
     slidesToShow: 3,
