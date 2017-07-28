@@ -1,0 +1,19 @@
+{
+  "slides": [
+    {
+      "img-path": "/images/gallery/photo1.jpeg",
+      "big-header": "First Title",
+      "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "img-path": "/images/gallery/photo2.jpeg",
+      "big-header": "Second Title",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "img-path": "/images/gallery/photo3.jpeg",
+      "big-header": "Third Title",
+      "description": "Sit amet venenatis urna cursus eget nunc."
+    }
+  ]
+}

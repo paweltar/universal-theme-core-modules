@@ -1,0 +1,15 @@
+<div class="uk-position-relative hero-slider__section">
+  <div class="hero-slider__container" uk-height-match="target: .hero-slider__slide">
+    {{#each hero-slider.slides}}
+    <div class="uk-section uk-section-xlarge uk-section-media uk-light uk-background-cover section--hero hero-slider__slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.9)), linear-gradient(90deg, rgba(0, 0, 0, 0.1) 85%, rgba(0, 0, 0, 0.7)), linear-gradient(-90deg, rgba(0, 0, 0, 0.1) 85%, rgba(0, 0, 0, 0.7)),
+    url({{this.img-path}});">
+      <div class="uk-container header__text header__text--slider">
+        <h1 class="uk-heading-hero">{{this.big-header}}</h1>
+        <h3>{{this.description}}</h3>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-slidenav-large uk-padding-small" id="hero-slider--prev" href="#" uk-slidenav-previous></a>
+  <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-slidenav-large uk-padding-small" id="hero-slider--next" href="#" uk-slidenav-next></a>
+</div>
