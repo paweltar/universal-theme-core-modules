@@ -3,7 +3,7 @@ import Icons from "uikit/dist/js/uikit-icons";
 import $ from "jquery";
 
 import "./components/gallery-section";
-import "./components/contact-section";
+import "./components/map";
 import "./components/contact-form";
 import "./components/hero-slider"
 
