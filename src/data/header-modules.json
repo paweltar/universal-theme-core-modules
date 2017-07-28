@@ -1,0 +1,10 @@
+{
+  "menu": {
+    "sections": [
+      {
+        "title": "About",
+        "link-url": "#section-about"
+      }
+    ]
+  }
+}

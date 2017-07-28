@@ -2,12 +2,12 @@
 
 <nav class="navbar--top uk-navbar-container uk-visible@s" style="z-index: 980;" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom" uk-navbar>
   <div class="uk-navbar-left uk-margin-large-left">
-    <a class="uk-navbar-item uk-logo" href="/" uk-scroll>{{global.company-name}}</a>
+    <a class="uk-navbar-item uk-logo" href="/">{{global.company-name}}</a>
   </div>
 
   <div class="uk-navbar-right uk-margin-large-right">
     <ul class="uk-navbar-nav">
-      {{#each header.menu.sections}}
+      {{#each data.menu.sections}}
         <li><a href="{{this.link-url}}" uk-scroll>{{this.title}}</a></li>
       {{/each}}
     </ul>
@@ -39,7 +39,7 @@
         <li class="uk-nav-header">Menu</li>
         <li class="uk-nav-divider"></li>
         <li><a href="/" uk-scroll>Home</a></li>
-        {{#each header.menu.sections}}
+        {{#each data.menu.sections}}
           <li><a href="{{this.link-url}}" uk-scroll>{{this.title}}</a></li>
         {{/each}}
       </ul>

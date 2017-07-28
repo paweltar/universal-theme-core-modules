@@ -30,7 +30,12 @@
     <title>Core Template</title>
   </head>
   <body>
-    {{> header}}
+    {{#ifpage 'index'}}
+      {{> header data=header}}
+    {{/ifpage}}
+    {{#ifpage 'modules'}}
+      {{> header data=header-modules}}
+    {{/ifpage}}
     {{> body}}
     {{> footer}}
     {{> scripts}}
