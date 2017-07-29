@@ -49,7 +49,7 @@ gulp.task("html", ["images"], function() {
       root: folder.src + "html/pages/",
       layouts: folder.src + "html/layouts/",
       partials: folder.src + "html/partials/",
-      helpers: folder.src + "html/helpers/",
+      helpers: folder.src + "js/helpers/",
       data: folder.src + "data/"
     })
   );
